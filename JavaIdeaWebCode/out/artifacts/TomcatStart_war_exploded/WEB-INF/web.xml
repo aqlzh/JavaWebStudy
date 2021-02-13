@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+<!--    配置Servlet-->
+    <servlet>
+        <servlet-name>demo1</servlet-name>
+        <servlet-class>cn.lzh.web.servlet.ServletTemp</servlet-class>
+        <!--指定Servlet的创建时机
+          1.第一次被访问时，创建
+              * <load-on-startup>的值为负数
+          2.在服务器启动时，创建
+              * <load-on-startup>的值为0或正整数
+      -->
+
+        <load-on-startup>5</load-on-startup>
+    </servlet>
+
+<!--    配置访问路径-->
+    <servlet-mapping>
+        <servlet-name>demo1</servlet-name>
+     <url-pattern>/demo1</url-pattern>   <!-- 路径注意加/ -->
+    </servlet-mapping>
+
+
+<!--    <servlet>-->
+<!--        <servlet-name>demo2</servlet-name>-->
+<!--        <servlet-class>cn.lzh.web.servlet.ServletDemo</servlet-class>-->
+<!--    </servlet>-->
+
+<!--    &lt;!&ndash;    配置访问路径&ndash;&gt;-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>demo2</servlet-name>-->
+<!--        <url-pattern>/demo2</url-pattern>   &lt;!&ndash; 路径注意加/ &ndash;&gt;-->
+<!--    </servlet-mapping>-->
+</web-app>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+
+	<student number="heima_0001">
+		<name>tom</name>
+		<age>18</age>
+		<sex>male</sex>
+	</student>
+	<student number="heima_0002">
+		<name>jerry</name>
+		<age>18</age>
+		<sex>male</sex>
+	</student>
+
+</students>
